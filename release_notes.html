@@ -1,0 +1,651 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+    <link href="_static/images/logo-dff.svg" rel="icon" type="image/svg+xml">
+    <title>Release v0.3.2 &#8212; DFF 0.3.2 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/katex-math.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/katex.min.js"></script>
+    <script src="_static/auto-render.min.js"></script>
+    <script src="_static/katex_autorenderer.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'release_notes';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">DFF 0.3.2 documentation</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="get_started.html">
+                        Getting started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="examples.html">
+                        Examples
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="reference.html">
+                        API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="development.html">
+                        Development
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="community.html">
+                        Community
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="about_us.html">
+                        About us
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://forum.deeppavlov.ai" title="DeepPavlov Forum" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/images/logo-deeppavlov.svg" class="icon-link-image" alt="DeepPavlov Forum"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://t.me/DeepPavlovDreamDiscussions" title="Telegram" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-telegram"></i></span>
+            <label class="sr-only">Telegram</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/deeppavlov/dialog_flow_framework" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="get_started.html">
+                        Getting started
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="examples.html">
+                        Examples
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="reference.html">
+                        API reference
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="tutorials.html">
+                        Tutorials
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="development.html">
+                        Development
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="community.html">
+                        Community
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="about_us.html">
+                        About us
+                      </a>
+                    </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://forum.deeppavlov.ai" title="DeepPavlov Forum" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="_static/images/logo-deeppavlov.svg" class="icon-link-image" alt="DeepPavlov Forum"/></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://t.me/DeepPavlovDreamDiscussions" title="Telegram" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-telegram"></i></span>
+            <label class="sr-only">Telegram</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/deeppavlov/dialog_flow_framework" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Release v0.3.2</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="release-v0-3-2">
+<h1>Release v0.3.2<a class="headerlink" href="#release-v0-3-2" title="Permalink to this heading">#</a></h1>
+<p>Changes:</p>
+<ul>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/809ccb7a9251ec902b2ae9df72af55be9970d871/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/809ccb7a9251ec902b2ae9df72af55be9970d871"><tt>809ccb7</tt></a> revert sphinxcontrib version bump (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1591864146" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/86" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/86/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/86">#86</a>)</li>
+</ul></section>
+<section id="release-v0-3-1">
+<h1>Release v0.3.1<a class="headerlink" href="#release-v0-3-1" title="Permalink to this heading">#</a></h1>
+<p>Changes:</p>
+<ul>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/6177fe98546a0ae69b969fc40d7b293dafdb7989/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/6177fe98546a0ae69b969fc40d7b293dafdb7989"><tt>6177fe9</tt></a> fix/out_of_mongo_bug: fix bug without installed mongo (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1591707408" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/84" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/84/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/84">#84</a>)</li>
+</ul></section>
+<section id="release-v0-3-0">
+<h1>Release v0.3.0<a class="headerlink" href="#release-v0-3-0" title="Permalink to this heading">#</a></h1>
+<p>Changes:</p>
+<ul>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/2acc593c8d1d796cb42126240a3c80bebb19edd5/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/2acc593c8d1d796cb42126240a3c80bebb19edd5"><tt>2acc593</tt></a> Examples sorting order fixed, theming scripts added to repository (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1575109793" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/79" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/79/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/79">#79</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/11eaea3a0ef05e1d769dd6fab24e6a6c20029184/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/11eaea3a0ef05e1d769dd6fab24e6a6c20029184"><tt>11eaea3</tt></a> Merge telegram into main repository (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1423908966" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/13" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/13/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/13">#13</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/fcb6096badf852c09c48a80c9b51027cf6b3a1e9/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/fcb6096badf852c09c48a80c9b51027cf6b3a1e9"><tt>fcb6096</tt></a> Docs/update (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1538331721" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/69" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/69/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/69">#69</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/0ec0fa6423523aab245faf1c81fa709c6caabf46/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/0ec0fa6423523aab245faf1c81fa709c6caabf46"><tt>0ec0fa6</tt></a> Docs/contributing and readme update (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1526891969" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/63" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/63/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/63">#63</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/1dbc979e008e7cc8b1b06567cd9698a4df51744e/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/1dbc979e008e7cc8b1b06567cd9698a4df51744e"><tt>1dbc979</tt></a> disabled test coverage on non-linux machines (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1582942885" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/82" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/82/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/82">#82</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/84f5da86dc3b76cd5d8f7562154efe2634280f6a/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/84f5da86dc3b76cd5d8f7562154efe2634280f6a"><tt>84f5da8</tt></a> id-token permission write added (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1582909677" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/81" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/81/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/81">#81</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/089deb12552df08b965e08f982b18f55a0ebb5ad/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/089deb12552df08b965e08f982b18f55a0ebb5ad"><tt>089deb1</tt></a> new <code>pydata</code> theme proposed instead of dff sphinx theme (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1551982785" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/70" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/70/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/70">#70</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/2c23486dbd6f8ec3049fab3fea5d96a02fc074f9/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/2c23486dbd6f8ec3049fab3fea5d96a02fc074f9"><tt>2c23486</tt></a> Migration to async DB drivers (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1512219520" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/60" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/60/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/60">#60</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/f118900b88afada161d24c692e20a9b9570c670d/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/f118900b88afada161d24c692e20a9b9570c670d"><tt>f118900</tt></a> Errorous output removed (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1533527137" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/66" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/66/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/66">#66</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a0130e55ea8cc95d65dcf174dc972b118b2eda24/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a0130e55ea8cc95d65dcf174dc972b118b2eda24"><tt>a0130e5</tt></a> new version of GH pages used (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1533370609" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/65" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/65/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/65">#65</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/55395eec8e3ca9746465b4ae9636b2808c7c0e8d/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/55395eec8e3ca9746465b4ae9636b2808c7c0e8d"><tt>55395ee</tt></a> cancel workflows in progress (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1578566677" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/80" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/80/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/80">#80</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/cbbdc5f8bfc199734f751c7327be3285bbca9f4a/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/cbbdc5f8bfc199734f751c7327be3285bbca9f4a"><tt>cbbdc5f</tt></a> feat/conditions_without_deep_copied_ctx_and_actor: add new condition handler by default (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1570519730" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/76" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/76/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/76">#76</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/c7b13678e4ee59ca69e4fd60e70b6060d733cb36/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/c7b13678e4ee59ca69e4fd60e70b6060d733cb36"><tt>c7b1367</tt></a>  fix cells order of basic example (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1570542072" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/77" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/77/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/77">#77</a>)</li>
+</ul></section>
+<section id="release-v0-2-1">
+<h1>Release v0.2.1<a class="headerlink" href="#release-v0-2-1" title="Permalink to this heading">#</a></h1>
+<p>Changes:</p>
+<ul>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/0b325ea476b7009cb8d57f041186e4bb2015bf60/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/0b325ea476b7009cb8d57f041186e4bb2015bf60"><tt>0b325ea</tt></a> fix run interactive mode (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1568385675" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/74" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/74/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/74">#74</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/f2f3dce95514bba988bee3f8c95a19528ac77d9e/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/f2f3dce95514bba988bee3f8c95a19528ac77d9e"><tt>f2f3dce</tt></a> fix/sqlalchemy_version: fix version of sqlalchemy (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1568820677" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/75" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/75/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/75">#75</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/2b7f59eec6ffd752ff0a1866a7bae72ca99eba45/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/2b7f59eec6ffd752ff0a1866a7bae72ca99eba45"><tt>2b7f59e</tt></a> Feat/hypothetical message (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1554856283" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/72" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/72/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/72">#72</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/c297d2ce099cb900631f176f767925277743ee3b/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/c297d2ce099cb900631f176f767925277743ee3b"><tt>c297d2c</tt></a> dev: fix style</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/f1813c4fa2057ec4af5a887817be9fae1d9222e8/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/f1813c4fa2057ec4af5a887817be9fae1d9222e8"><tt>f1813c4</tt></a> dev: fix a link of installing comment</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/8c71e2be452dc5179aa4ae181f8922abc226c7e2/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/8c71e2be452dc5179aa4ae181f8922abc226c7e2"><tt>8c71e2b</tt></a> upd/add_description_to_examples_pip_installing: add comments (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1533538544" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/67" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/67/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/67">#67</a>)</li>
+</ul></section>
+<section id="release-v0-2-0">
+<h1>Release v0.2.0<a class="headerlink" href="#release-v0-2-0" title="Permalink to this heading">#</a></h1>
+<p>Changes:</p>
+<ul>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/0b04ad727249e4ad941a874c51c4069825b53a71/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/0b04ad727249e4ad941a874c51c4069825b53a71"><tt>0b04ad7</tt></a> Fix / attempt to fix message repr with excluding Nones (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1532482491" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/64" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/64/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/64">#64</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/fe6c5e7f0aa81426a344743836e7e04c3b48c140/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/fe6c5e7f0aa81426a344743836e7e04c3b48c140"><tt>fe6c5e7</tt></a> Feat/message class (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1525531825" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/62" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/62/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/62">#62</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/602fa092488ac794ae345492e7bd70633b0c60ae/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/602fa092488ac794ae345492e7bd70633b0c60ae"><tt>602fa09</tt></a> Processing deprecation (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1512225924" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/61" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/61/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/61">#61</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/d584c6824fe40cea77c8e83c18fe776d58c0c1e6/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/d584c6824fe40cea77c8e83c18fe776d58c0c1e6"><tt>d584c68</tt></a> docs/to the sphinx docstring (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1508113525" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/58" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/58/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/58">#58</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/868c19bb960cf4fd402f73f194bd906f2d471bec/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/868c19bb960cf4fd402f73f194bd906f2d471bec"><tt>868c19b</tt></a> Added support for different dependencies for different examples (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1496331660" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/50" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/50/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/50">#50</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/cbc00a31aa6f83aac05c0108f2a707b64afa109e/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/cbc00a31aa6f83aac05c0108f2a707b64afa109e"><tt>cbc00a3</tt></a> Run tests in an isolated environment (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1504446794" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/54" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/54/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/54">#54</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/20ff27734ac231dcc078bdb6c6dce9445a5ff9d3/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/20ff27734ac231dcc078bdb6c6dce9445a5ff9d3"><tt>20ff277</tt></a> docs: fix <code>ModuleName</code> in docs (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1506605350" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/57" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/57/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/57">#57</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/76bac704582bcd3494dcdde3b3be021ec54af630/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/76bac704582bcd3494dcdde3b3be021ec54af630"><tt>76bac70</tt></a> example utils documentation added (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1506228445" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/55" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/55/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/55">#55</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/e592f6e8e0cb02157f6b955b7cf237acaade7b4e/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/e592f6e8e0cb02157f6b955b7cf237acaade7b4e"><tt>e592f6e</tt></a> Added psuedo-setters for context properties (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1497568353" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/51" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/51/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/51">#51</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/2980d6802339f6c6909a6a09a5a048ddb37c59e3/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/2980d6802339f6c6909a6a09a5a048ddb37c59e3"><tt>2980d68</tt></a> rename tests/messeners to tests/messengers (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1504160538" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/53" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/53/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/53">#53</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/41e44192699b3c6e309efbe6e6d7f6c9ba87e908/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/41e44192699b3c6e309efbe6e6d7f6c9ba87e908"><tt>41e4419</tt></a> Directory structure changed (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1489198454" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/48" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/48/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/48">#48</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/8c09b82f6e9de40a078e903c1162bbd110b797fe/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/8c09b82f6e9de40a078e903c1162bbd110b797fe"><tt>8c09b82</tt></a> Add event_handler workflow (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1498401927" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/52" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/52/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/52">#52</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/922b996631c7e264fabf55f4b504de637428fcf2/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/922b996631c7e264fabf55f4b504de637428fcf2"><tt>922b996</tt></a> <code>:rtype:</code> removed for function aliases (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1466593405" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/45" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/45/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/45">#45</a>)</li>
+</ul></section>
+<section id="release-v0-1-0rc0">
+<h1>Release v0.1.0rc0<a class="headerlink" href="#release-v0-1-0rc0" title="Permalink to this heading">#</a></h1>
+<p>Changes:</p>
+<ul>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a35b08cdc0755077fd687db53a8e183f80119807/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a35b08cdc0755077fd687db53a8e183f80119807"><tt>a35b08c</tt></a>  feat/first_realease: upd version&amp;add cast release to version (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1493663355" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/49" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/49/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/49">#49</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/6c080cd2e798afeba8c302bdac5ba2b8cad62766/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/6c080cd2e798afeba8c302bdac5ba2b8cad62766"><tt>6c080cd</tt></a> upd API doc&amp;setup notebooks of examples&amp; fix doc building and tests(<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1467537921" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/46" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/46/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/46">#46</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/7ad3d50fb46a2c35d54d1bfeda471975e4bbd19b/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/7ad3d50fb46a2c35d54d1bfeda471975e4bbd19b"><tt>7ad3d50</tt></a> (feat/new_dir_structure_proposals, feat/dir_structure) examples buttons added (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1464388093" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/44" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/44/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/44">#44</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/e2cf3e84b29c52678218b17ac8d02e71e5f932fa/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/e2cf3e84b29c52678218b17ac8d02e71e5f932fa"><tt>e2cf3e8</tt></a> Merge turn_cacher into main repo (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1444211141" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/40" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/40/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/40">#40</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a1ffce2e7295eb1ff031e71d611c59f612718c0b/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a1ffce2e7295eb1ff031e71d611c59f612718c0b"><tt>a1ffce2</tt></a> fix warnings&amp;errors of doc building (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1433436638" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/29" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/29/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/29">#29</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/c9f00b9546af82755f49f501247cdb5f4b192944/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/c9f00b9546af82755f49f501247cdb5f4b192944"><tt>c9f00b9</tt></a> All example utils moved to <code>dff</code> (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1435684000" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/34" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/34/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/34">#34</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a1bf0e6167e826b0e6dfa14070620d961619d0fc/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a1bf0e6167e826b0e6dfa14070620d961619d0fc"><tt>a1bf0e6</tt></a> Context.last_* property setters added and used in pipeline examples (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1450028639" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/41" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/41/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/41">#41</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/cc272c06a287f0cb06b858cc21906842a28ba0fe/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/cc272c06a287f0cb06b858cc21906842a28ba0fe"><tt>cc272c0</tt></a> Report coverage only on python3.10 (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1443938090" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/39" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/39/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/39">#39</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/e7bbfce4837b42be86e7591e6936f62cffcc6ef0/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/e7bbfce4837b42be86e7591e6936f62cffcc6ef0"><tt>e7bbfce</tt></a> <code>workflow_dispatch</code> event added for all workflows. (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1443652116" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/38" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/38/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/38">#38</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/8a1b16aea04178416b4515a69dd282ebeaa0e3e0/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/8a1b16aea04178416b4515a69dd282ebeaa0e3e0"><tt>8a1b16a</tt></a> fix: close protocols.json (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1442411615" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/37" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/37/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/37">#37</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/d98b17a3b862faad105de819f6a64896e346a151/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/d98b17a3b862faad105de819f6a64896e346a151"><tt>d98b17a</tt></a> upd documentation structure (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1433871604" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/31" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/31/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/31">#31</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/c8a411c6a678deecb9472965b86a732ca773a790/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/c8a411c6a678deecb9472965b86a732ca773a790"><tt>c8a411c</tt></a> Fix make help typo (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1434313275" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/33" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/33/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/33">#33</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/aa803632c7d1b3fe4536adcb706c337d349c026e/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/aa803632c7d1b3fe4536adcb706c337d349c026e"><tt>aa80363</tt></a> Update MANIFEST.in (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1434232283" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/32" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/32/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/32">#32</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/9c41ef4ac7c959d2a2bad7c899a9c67750fdea29/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/9c41ef4ac7c959d2a2bad7c899a9c67750fdea29"><tt>9c41ef4</tt></a> Update workflow triggers (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1433480316" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/30" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/30/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/30">#30</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a0a87c96d6d39cfa32c4b434136ae609416893f6/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a0a87c96d6d39cfa32c4b434136ae609416893f6"><tt>a0a87c9</tt></a> Add examples building as jupyter notebooks into the documentation (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1431211650" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/21" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/21/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/21">#21</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/6f099ebbd0604035df555522dff78bfad40e4247/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/6f099ebbd0604035df555522dff78bfad40e4247"><tt>6f099eb</tt></a> Run workflows on pull requests (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1433220237" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/27" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/27/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/27">#27</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/f8b558fb63cab2a000d941b2a6b04c1d7cadc300/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/f8b558fb63cab2a000d941b2a6b04c1d7cadc300"><tt>f8b558f</tt></a> Exclude any venvs from lint and format (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1433248326" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/28" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/28/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/28">#28</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/42a834df8c570469d0e88f3ff2d00c630cc4f191/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/42a834df8c570469d0e88f3ff2d00c630cc4f191"><tt>42a834d</tt></a> Remove pipe to pytest-coverage.txt for non_linux_test job (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1431783291" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/23" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/23/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/23">#23</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/ec700a96cfcbd2e6d15d06f33b18394fac4d242e/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/ec700a96cfcbd2e6d15d06f33b18394fac4d242e"><tt>ec700a9</tt></a> Fix PULL_REQUEST_TEMPLATE.md (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1431778972" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/22" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/22/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/22">#22</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/eac7bb71dbfa418ac3fd5159b574b6495a391596/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/eac7bb71dbfa418ac3fd5159b574b6495a391596"><tt>eac7bb7</tt></a> feat/pr-templates: add pr template (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1426003804" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/17" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/17/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/17">#17</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a6edd993537254329966254558b0b057473d2e07/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a6edd993537254329966254558b0b057473d2e07"><tt>a6edd99</tt></a> Pipeline tests time limitation reduced 100 times. (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1426277592" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/18" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/18/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/18">#18</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/5abdf8bf873348c5df8cae99bb1b2135e3e59422/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/5abdf8bf873348c5df8cae99bb1b2135e3e59422"><tt>5abdf8b</tt></a> fast_fix/versioning: fix versioning (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1427191908" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/19" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/19/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/19">#19</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/1b953de248dc8b0a1782b85e20adfeda6a840a6a/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/1b953de248dc8b0a1782b85e20adfeda6a840a6a"><tt>1b953de</tt></a> fast_fix/engine_tests: fast fix engine tests (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1425981543" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/16" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/16/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/16">#16</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/e23e483c263dddca6737a04c7f75cfb6ccdf64c8/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/e23e483c263dddca6737a04c7f75cfb6ccdf64c8"><tt>e23e483</tt></a> TODO and fix in engine examples (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1425595309" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/15" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/15/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/15">#15</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/d57fdab155e1b2bd305278a14eb29d86eb276b0b/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/d57fdab155e1b2bd305278a14eb29d86eb276b0b"><tt>d57fdab</tt></a> add generics&amp;cover all by testing except venv and build (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1420527088" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/8" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/8/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/8">#8</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/a876b6c4c85be72dca2dab589a4bfded8b032601/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/a876b6c4c85be72dca2dab589a4bfded8b032601"><tt>a876b6c</tt></a> fix&amp;refactor/examples&amp;tests  (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1424806757" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/14" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/14/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/14">#14</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/6884025c2bda9370cd87ea4b9606dcb2dac88563/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/6884025c2bda9370cd87ea4b9606dcb2dac88563"><tt>6884025</tt></a> fix/windows_postgres_building (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1422757272" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/12" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/12/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/12">#12</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/e57958c0edd22f95c51be6580b588ed277791bce/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/e57958c0edd22f95c51be6580b588ed277791bce"><tt>e57958c</tt></a> dev: Add documentation checking, building and publishing workflow (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1421165557" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/10" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/10/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/10">#10</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/ddd639965b183b3b3f679cc7a9dd3c6f0940257d/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/ddd639965b183b3b3f679cc7a9dd3c6f0940257d"><tt>ddd6399</tt></a> Remove redundant functions and add tests for existing ones (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1422200257" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/11" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/11/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/11">#11</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/125953bfc6642d670409e50a951671048785da09/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/125953bfc6642d670409e50a951671048785da09"><tt>125953b</tt></a> Add doc building (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1416449694" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/6" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/6/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/6">#6</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/603109ab16c365b6a677679fa7599ccfcea482ab/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/603109ab16c365b6a677679fa7599ccfcea482ab"><tt>603109a</tt></a> fast_fix/pipeline/intro: fix intro (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1418394810" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/7" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/7/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/7">#7</a>)</li>
+<li><a class="commit-link" data-hovercard-type="commit" data-hovercard-url="https://github.com/deeppavlov/dialog_flow_framework/commit/e2f85762c5061280ef9a743ce40dbf6e4cb9a05c/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/commit/e2f85762c5061280ef9a743ce40dbf6e4cb9a05c"><tt>e2f8576</tt></a> Merge pipeline into main repository (<a class="issue-link js-issue-link" data-error-text="Failed to load title" data-id="1416212313" data-permission-text="Title is private" data-url="https://github.com/deeppavlov/dialog_flow_framework/issues/4" data-hovercard-type="pull_request" data-hovercard-url="/deeppavlov/dialog_flow_framework/pull/4/hovercard" href="https://github.com/deeppavlov/dialog_flow_framework/pull/4">#4</a>)</li>
+</ul></section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Release v0.3.2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#release-v0-3-1">Release v0.3.1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#release-v0-3-0">Release v0.3.0</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#release-v0-2-1">Release v0.2.1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#release-v0-2-0">Release v0.2.0</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#release-v0-1-0rc0">Release v0.1.0rc0</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, DeepPavlov.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
